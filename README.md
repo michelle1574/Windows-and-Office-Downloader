@@ -1,2 +1,10 @@
-# Windows-and-Office-Downloader
-Pobieracz Windowsa i Office'a, też może zainstalować Office'a.
+Pobieracz Office'a i Windowsa
+=============================
+
+  
+
+Może pobrać Windowsa i Office'a.
+
+Też może zainstalować Office'a ale nie Windowsa.
+
+Należy poczekać trochę na instalację Windowsa.
