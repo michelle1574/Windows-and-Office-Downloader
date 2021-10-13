@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Ver2021 = New System.Windows.Forms.RadioButton()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Ver365 = New System.Windows.Forms.RadioButton()
         Me.Ver2019 = New System.Windows.Forms.RadioButton()
@@ -37,7 +38,6 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Ver2021 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -56,6 +56,17 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dostępne wersje"
         '
+        'Ver2021
+        '
+        Me.Ver2021.AutoSize = True
+        Me.Ver2021.Location = New System.Drawing.Point(15, 57)
+        Me.Ver2021.Name = "Ver2021"
+        Me.Ver2021.Size = New System.Drawing.Size(84, 19)
+        Me.Ver2021.TabIndex = 0
+        Me.Ver2021.TabStop = True
+        Me.Ver2021.Text = "Office 2021"
+        Me.Ver2021.UseVisualStyleBackColor = True
+        '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
@@ -64,7 +75,7 @@ Partial Class Form1
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(184, 23)
         Me.ComboBox1.Sorted = True
-        Me.ComboBox1.TabIndex = 4
+        Me.ComboBox1.TabIndex = 6
         '
         'Ver365
         '
@@ -72,7 +83,7 @@ Partial Class Form1
         Me.Ver365.Location = New System.Drawing.Point(285, 32)
         Me.Ver365.Name = "Ver365"
         Me.Ver365.Size = New System.Drawing.Size(78, 19)
-        Me.Ver365.TabIndex = 0
+        Me.Ver365.TabIndex = 1
         Me.Ver365.TabStop = True
         Me.Ver365.Text = "Office 365"
         Me.Ver365.UseVisualStyleBackColor = True
@@ -83,7 +94,7 @@ Partial Class Form1
         Me.Ver2019.Location = New System.Drawing.Point(195, 32)
         Me.Ver2019.Name = "Ver2019"
         Me.Ver2019.Size = New System.Drawing.Size(84, 19)
-        Me.Ver2019.TabIndex = 1
+        Me.Ver2019.TabIndex = 2
         Me.Ver2019.TabStop = True
         Me.Ver2019.Text = "Office 2019"
         Me.Ver2019.UseVisualStyleBackColor = True
@@ -94,7 +105,7 @@ Partial Class Form1
         Me.Ver2016.Location = New System.Drawing.Point(105, 32)
         Me.Ver2016.Name = "Ver2016"
         Me.Ver2016.Size = New System.Drawing.Size(84, 19)
-        Me.Ver2016.TabIndex = 2
+        Me.Ver2016.TabIndex = 3
         Me.Ver2016.TabStop = True
         Me.Ver2016.Text = "Office 2016"
         Me.Ver2016.UseVisualStyleBackColor = True
@@ -105,7 +116,7 @@ Partial Class Form1
         Me.Ver2013.Location = New System.Drawing.Point(15, 32)
         Me.Ver2013.Name = "Ver2013"
         Me.Ver2013.Size = New System.Drawing.Size(84, 19)
-        Me.Ver2013.TabIndex = 3
+        Me.Ver2013.TabIndex = 4
         Me.Ver2013.TabStop = True
         Me.Ver2013.Text = "Office 2013"
         Me.Ver2013.UseVisualStyleBackColor = True
@@ -116,7 +127,7 @@ Partial Class Form1
         Me.onlineInstall.Location = New System.Drawing.Point(22, 106)
         Me.onlineInstall.Name = "onlineInstall"
         Me.onlineInstall.Size = New System.Drawing.Size(300, 19)
-        Me.onlineInstall.TabIndex = 4
+        Me.onlineInstall.TabIndex = 7
         Me.onlineInstall.Text = "Instalacja online (pobiera plik obrazu z instalatorem)"
         Me.onlineInstall.UseVisualStyleBackColor = True
         '
@@ -134,7 +145,7 @@ Partial Class Form1
         Me.LinkLabel1.Location = New System.Drawing.Point(12, 179)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(258, 15)
-        Me.LinkLabel1.TabIndex = 7
+        Me.LinkLabel1.TabIndex = 10
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Nic się nie dzieje? Nie było okna z pobieraniem?"
         '
@@ -144,7 +155,7 @@ Partial Class Form1
         Me.LinkLabel2.Location = New System.Drawing.Point(12, 199)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(242, 15)
-        Me.LinkLabel2.TabIndex = 8
+        Me.LinkLabel2.TabIndex = 11
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Instrukcja robienia wersji offline instalatorów"
         '
@@ -156,7 +167,7 @@ Partial Class Form1
         Me.Button1.Location = New System.Drawing.Point(12, 131)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(163, 45)
-        Me.Button1.TabIndex = 5
+        Me.Button1.TabIndex = 8
         Me.Button1.Text = "ff"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -168,7 +179,7 @@ Partial Class Form1
         Me.Button2.Location = New System.Drawing.Point(181, 131)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(166, 45)
-        Me.Button2.TabIndex = 6
+        Me.Button2.TabIndex = 9
         Me.Button2.Text = "Odznacz wszystko"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -178,7 +189,7 @@ Partial Class Form1
         Me.Label1.Location = New System.Drawing.Point(309, 189)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(13, 15)
-        Me.Label1.TabIndex = 9
+        Me.Label1.TabIndex = 13
         Me.Label1.Text = "1"
         Me.Label1.Visible = False
         '
@@ -187,20 +198,9 @@ Partial Class Form1
         Me.Button3.Location = New System.Drawing.Point(12, 217)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(163, 23)
-        Me.Button3.TabIndex = 10
+        Me.Button3.TabIndex = 12
         Me.Button3.Text = "Do pobierania Windows"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Ver2021
-        '
-        Me.Ver2021.AutoSize = True
-        Me.Ver2021.Location = New System.Drawing.Point(15, 57)
-        Me.Ver2021.Name = "Ver2021"
-        Me.Ver2021.Size = New System.Drawing.Size(84, 19)
-        Me.Ver2021.TabIndex = 5
-        Me.Ver2021.TabStop = True
-        Me.Ver2021.Text = "Office 2021"
-        Me.Ver2021.UseVisualStyleBackColor = True
         '
         'Form1
         '

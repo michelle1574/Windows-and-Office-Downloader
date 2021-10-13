@@ -24,6 +24,10 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.verAzureStackHCIPreview = New System.Windows.Forms.RadioButton()
+        Me.verServer2022 = New System.Windows.Forms.RadioButton()
+        Me.ver11 = New System.Windows.Forms.RadioButton()
+        Me.ver11_off = New System.Windows.Forms.RadioButton()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ver1809 = New System.Windows.Forms.RadioButton()
         Me.ver19H1 = New System.Windows.Forms.RadioButton()
@@ -42,10 +46,6 @@ Partial Class Form2
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.ver11_off = New System.Windows.Forms.RadioButton()
-        Me.ver11 = New System.Windows.Forms.RadioButton()
-        Me.verServer2022 = New System.Windows.Forms.RadioButton()
-        Me.verAzureStackHCIPreview = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,10 +66,54 @@ Partial Class Form2
         Me.GroupBox1.Controls.Add(Me.ver9600)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(478, 145)
+        Me.GroupBox1.Size = New System.Drawing.Size(478, 154)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dostępne wersje:"
+        '
+        'verAzureStackHCIPreview
+        '
+        Me.verAzureStackHCIPreview.AutoSize = True
+        Me.verAzureStackHCIPreview.Location = New System.Drawing.Point(6, 126)
+        Me.verAzureStackHCIPreview.Name = "verAzureStackHCIPreview"
+        Me.verAzureStackHCIPreview.Size = New System.Drawing.Size(153, 19)
+        Me.verAzureStackHCIPreview.TabIndex = 12
+        Me.verAzureStackHCIPreview.TabStop = True
+        Me.verAzureStackHCIPreview.Text = "Azure Stack HCI Preview"
+        Me.verAzureStackHCIPreview.UseVisualStyleBackColor = True
+        '
+        'verServer2022
+        '
+        Me.verServer2022.AutoSize = True
+        Me.verServer2022.Location = New System.Drawing.Point(5, 101)
+        Me.verServer2022.Name = "verServer2022"
+        Me.verServer2022.Size = New System.Drawing.Size(185, 19)
+        Me.verServer2022.TabIndex = 11
+        Me.verServer2022.TabStop = True
+        Me.verServer2022.Text = "Windows Server 2022 (Finalna)"
+        Me.verServer2022.UseVisualStyleBackColor = True
+        '
+        'ver11
+        '
+        Me.ver11.AutoSize = True
+        Me.ver11.Location = New System.Drawing.Point(218, 76)
+        Me.ver11.Name = "ver11"
+        Me.ver11.Size = New System.Drawing.Size(157, 19)
+        Me.ver11.TabIndex = 10
+        Me.ver11.TabStop = True
+        Me.ver11.Text = "Windows 11 Dev channel"
+        Me.ver11.UseVisualStyleBackColor = True
+        '
+        'ver11_off
+        '
+        Me.ver11_off.AutoSize = True
+        Me.ver11_off.Location = New System.Drawing.Point(131, 76)
+        Me.ver11_off.Name = "ver11_off"
+        Me.ver11_off.Size = New System.Drawing.Size(89, 19)
+        Me.ver11_off.TabIndex = 9
+        Me.ver11_off.TabStop = True
+        Me.ver11_off.Text = "Windows 11"
+        Me.ver11_off.UseVisualStyleBackColor = True
         '
         'ComboBox1
         '
@@ -84,7 +128,7 @@ Partial Class Form2
         'ver1809
         '
         Me.ver1809.AutoSize = True
-        Me.ver1809.Location = New System.Drawing.Point(9, 76)
+        Me.ver1809.Location = New System.Drawing.Point(4, 76)
         Me.ver1809.Name = "ver1809"
         Me.ver1809.Size = New System.Drawing.Size(116, 19)
         Me.ver1809.TabIndex = 8
@@ -171,7 +215,7 @@ Partial Class Form2
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(86, 255)
+        Me.WebBrowser1.Location = New System.Drawing.Point(84, 265)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScriptErrorsSuppressed = True
         Me.WebBrowser1.Size = New System.Drawing.Size(335, 228)
@@ -179,7 +223,7 @@ Partial Class Form2
         '
         'downloadAMD64
         '
-        Me.downloadAMD64.Location = New System.Drawing.Point(130, 163)
+        Me.downloadAMD64.Location = New System.Drawing.Point(128, 173)
         Me.downloadAMD64.Name = "downloadAMD64"
         Me.downloadAMD64.Size = New System.Drawing.Size(113, 23)
         Me.downloadAMD64.TabIndex = 2
@@ -188,7 +232,7 @@ Partial Class Form2
         '
         'download_x86
         '
-        Me.download_x86.Location = New System.Drawing.Point(249, 163)
+        Me.download_x86.Location = New System.Drawing.Point(247, 173)
         Me.download_x86.Name = "download_x86"
         Me.download_x86.Size = New System.Drawing.Size(113, 23)
         Me.download_x86.TabIndex = 3
@@ -197,7 +241,7 @@ Partial Class Form2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(18, 192)
+        Me.Button1.Location = New System.Drawing.Point(16, 202)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(147, 23)
         Me.Button1.TabIndex = 4
@@ -206,7 +250,7 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(341, 192)
+        Me.Button2.Location = New System.Drawing.Point(339, 202)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(149, 23)
         Me.Button2.TabIndex = 5
@@ -219,7 +263,7 @@ Partial Class Form2
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(341, 496)
+        Me.Button3.Location = New System.Drawing.Point(339, 506)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(149, 23)
         Me.Button3.TabIndex = 6
@@ -233,62 +277,18 @@ Partial Class Form2
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(17, 218)
+        Me.LinkLabel1.Location = New System.Drawing.Point(15, 228)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(88, 15)
         Me.LinkLabel1.TabIndex = 7
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Zobacz notatkę"
         '
-        'ver11_off
-        '
-        Me.ver11_off.AutoSize = True
-        Me.ver11_off.Location = New System.Drawing.Point(131, 76)
-        Me.ver11_off.Name = "ver11_off"
-        Me.ver11_off.Size = New System.Drawing.Size(89, 19)
-        Me.ver11_off.TabIndex = 9
-        Me.ver11_off.TabStop = True
-        Me.ver11_off.Text = "Windows 11"
-        Me.ver11_off.UseVisualStyleBackColor = True
-        '
-        'ver11
-        '
-        Me.ver11.AutoSize = True
-        Me.ver11.Location = New System.Drawing.Point(218, 76)
-        Me.ver11.Name = "ver11"
-        Me.ver11.Size = New System.Drawing.Size(157, 19)
-        Me.ver11.TabIndex = 10
-        Me.ver11.TabStop = True
-        Me.ver11.Text = "Windows 11 Dev channel"
-        Me.ver11.UseVisualStyleBackColor = True
-        '
-        'verServer2022
-        '
-        Me.verServer2022.AutoSize = True
-        Me.verServer2022.Location = New System.Drawing.Point(9, 101)
-        Me.verServer2022.Name = "verServer2022"
-        Me.verServer2022.Size = New System.Drawing.Size(185, 19)
-        Me.verServer2022.TabIndex = 11
-        Me.verServer2022.TabStop = True
-        Me.verServer2022.Text = "Windows Server 2022 (Finalna)"
-        Me.verServer2022.UseVisualStyleBackColor = True
-        '
-        'verAzureStackHCIPreview
-        '
-        Me.verAzureStackHCIPreview.AutoSize = True
-        Me.verAzureStackHCIPreview.Location = New System.Drawing.Point(9, 120)
-        Me.verAzureStackHCIPreview.Name = "verAzureStackHCIPreview"
-        Me.verAzureStackHCIPreview.Size = New System.Drawing.Size(153, 19)
-        Me.verAzureStackHCIPreview.TabIndex = 12
-        Me.verAzureStackHCIPreview.TabStop = True
-        Me.verAzureStackHCIPreview.Text = "Azure Stack HCI Preview"
-        Me.verAzureStackHCIPreview.UseVisualStyleBackColor = True
-        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(500, 242)
+        Me.ClientSize = New System.Drawing.Size(500, 248)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)

@@ -146,7 +146,7 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.Height += 1
-        If Me.Height = 570 Then
+        If Me.Height = 575 Then
             Timer1.Stop()
         End If
     End Sub
@@ -157,14 +157,14 @@
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         Me.Height -= 1
-        If Me.Height = 253 Then
+        If Me.Height = 287 Then
             Timer2.Stop()
         End If
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         MsgBox("Notatka: przy wersji Windows server 2022, należy wcisnąć Pokaż okno WebBrowser i nacisnąć Pobierz.
-Dotyczy też angielskiej wersji Windows 11 z Dev channel i Azure Stack HCI Preview.", vbOKOnly + vbInformation, "Notatka")
+Dotyczy też angielskiej wersji Windows 11 z Dev channel i Azure Stack HCI Preview (wszystkie języki).", vbOKOnly + vbInformation, "Notatka")
     End Sub
 
     Private Sub ver11_off_CheckedChanged(sender As Object, e As EventArgs) Handles ver11_off.CheckedChanged
