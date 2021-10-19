@@ -75,6 +75,14 @@
             ElseIf ComboBox1.Text = "Angielski (Stany Zjednoczone)" Then
                 WebBrowser1.Navigate("https://anonfiles.com/10r8h0N3u0/22471.1000.210929-1415.RS_PRERELEASE_SERVERAZURESTACKHCI_RET_X64FRE_EN-US_ISO")
             End If
+        ElseIf ver11_2.Checked = True Then
+            If ComboBox1.Text = "Polski (Polska)" Then
+                WebBrowser1.Navigate("https://anonfiles.com/T8B1O2Ofub/22478.1012.211011-1258.RS_PRERELEASE_FLT_CLIENTMULTI_X64FRE_PL-PL_ISO")
+            ElseIf ComboBox1.Text = "Angielski (Stany Zjednoczone)" Then
+                WebBrowser1.Navigate("https://anonfiles.com/5d37J0Oeub/22478.1012.211011-1258.RS_PRERELEASE_FLT_CLIENTMULTI_X64FRE_EN-US_ISO")
+            End If
+        Else
+            MsgBox("Nie wybrano wersji. Należy wybrać wersję aby pobrać.", vbCritical + vbOKOnly, "Błąd")
         End If
     End Sub
 
@@ -127,6 +135,8 @@
             ElseIf ComboBox1.Text = "Angielski (Stany Zjednoczone)" Then
                 WebBrowser1.Navigate("https://tb.rg-adguard.net/dl.php?go=49cda6ac")
             End If
+        Else
+            MsgBox("Nie wybrano wersji. Należy wybrać wersję aby pobrać.", vbCritical + vbOKOnly, "Błąd")
         End If
     End Sub
 
@@ -146,7 +156,7 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.Height += 1
-        If Me.Height = 575 Then
+        If Me.Height = 627 Then
             Timer1.Stop()
         End If
     End Sub
@@ -157,14 +167,15 @@
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         Me.Height -= 1
-        If Me.Height = 287 Then
+        If Me.Height = 332 Then
             Timer2.Stop()
         End If
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         MsgBox("Notatka: przy wersji Windows server 2022, należy wcisnąć Pokaż okno WebBrowser i nacisnąć Pobierz.
-Dotyczy też angielskiej wersji Windows 11 z Dev channel i Azure Stack HCI Preview (wszystkie języki).", vbOKOnly + vbInformation, "Notatka")
+Dotyczy też angielskiej wersji Windows 11 z Dev channel (też z 2) i Azure Stack HCI Preview (wszystkie języki).
+Jeśli widzisz jakąś wersję z (2) to znaczy że w serwerze jest nowa wersja.", vbOKOnly + vbInformation, "Notatka")
     End Sub
 
     Private Sub ver11_off_CheckedChanged(sender As Object, e As EventArgs) Handles ver11_off.CheckedChanged
@@ -197,5 +208,21 @@ Dotyczy też angielskiej wersji Windows 11 z Dev channel i Azure Stack HCI Previ
         Else
             download_x86.Enabled = True
         End If
+    End Sub
+
+    Private Sub ver11_2_CheckedChanged(sender As Object, e As EventArgs) Handles ver11_2.CheckedChanged
+        If ver11_2.Checked = True Then
+            download_x86.Enabled = False
+        Else
+            download_x86.Enabled = True
+        End If
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        'Czekać na wydanie (odznaczenia wszystkiego)
+        'Pokazuje informację
+        'MsgBox("Aktualnie czekamy na nową funkcję.
+        'DOBRA PODPOWIEDŹ: zobacz kod źródłowy aby zobaczyć o co chodzi.", vbOKOnly + vbInformation, "Informacja")
+        'Anulowanie dodania MsgBox.
     End Sub
 End Class

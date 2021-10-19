@@ -46,11 +46,14 @@ Partial Class Form2
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.ver11_2 = New System.Windows.Forms.RadioButton()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ver11_2)
         Me.GroupBox1.Controls.Add(Me.verAzureStackHCIPreview)
         Me.GroupBox1.Controls.Add(Me.verServer2022)
         Me.GroupBox1.Controls.Add(Me.ver11)
@@ -66,7 +69,7 @@ Partial Class Form2
         Me.GroupBox1.Controls.Add(Me.ver9600)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(478, 154)
+        Me.GroupBox1.Size = New System.Drawing.Size(478, 202)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dostępne wersje:"
@@ -74,7 +77,7 @@ Partial Class Form2
         'verAzureStackHCIPreview
         '
         Me.verAzureStackHCIPreview.AutoSize = True
-        Me.verAzureStackHCIPreview.Location = New System.Drawing.Point(6, 126)
+        Me.verAzureStackHCIPreview.Location = New System.Drawing.Point(197, 101)
         Me.verAzureStackHCIPreview.Name = "verAzureStackHCIPreview"
         Me.verAzureStackHCIPreview.Size = New System.Drawing.Size(153, 19)
         Me.verAzureStackHCIPreview.TabIndex = 12
@@ -119,7 +122,7 @@ Partial Class Form2
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Angielski (Stany Zjednoczone)", "Polski (Polska)"})
-        Me.ComboBox1.Location = New System.Drawing.Point(285, 116)
+        Me.ComboBox1.Location = New System.Drawing.Point(285, 173)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(187, 23)
         Me.ComboBox1.Sorted = True
@@ -215,7 +218,7 @@ Partial Class Form2
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(84, 265)
+        Me.WebBrowser1.Location = New System.Drawing.Point(83, 325)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScriptErrorsSuppressed = True
         Me.WebBrowser1.Size = New System.Drawing.Size(335, 228)
@@ -223,7 +226,7 @@ Partial Class Form2
         '
         'downloadAMD64
         '
-        Me.downloadAMD64.Location = New System.Drawing.Point(128, 173)
+        Me.downloadAMD64.Location = New System.Drawing.Point(130, 220)
         Me.downloadAMD64.Name = "downloadAMD64"
         Me.downloadAMD64.Size = New System.Drawing.Size(113, 23)
         Me.downloadAMD64.TabIndex = 2
@@ -232,7 +235,7 @@ Partial Class Form2
         '
         'download_x86
         '
-        Me.download_x86.Location = New System.Drawing.Point(247, 173)
+        Me.download_x86.Location = New System.Drawing.Point(249, 220)
         Me.download_x86.Name = "download_x86"
         Me.download_x86.Size = New System.Drawing.Size(113, 23)
         Me.download_x86.TabIndex = 3
@@ -241,7 +244,7 @@ Partial Class Form2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(16, 202)
+        Me.Button1.Location = New System.Drawing.Point(18, 249)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(147, 23)
         Me.Button1.TabIndex = 4
@@ -250,7 +253,7 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(339, 202)
+        Me.Button2.Location = New System.Drawing.Point(341, 249)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(149, 23)
         Me.Button2.TabIndex = 5
@@ -263,7 +266,7 @@ Partial Class Form2
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(339, 506)
+        Me.Button3.Location = New System.Drawing.Point(339, 559)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(149, 23)
         Me.Button3.TabIndex = 6
@@ -277,18 +280,40 @@ Partial Class Form2
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(15, 228)
+        Me.LinkLabel1.Location = New System.Drawing.Point(17, 275)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(88, 15)
         Me.LinkLabel1.TabIndex = 7
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Zobacz notatkę"
         '
+        'ver11_2
+        '
+        Me.ver11_2.AutoSize = True
+        Me.ver11_2.Location = New System.Drawing.Point(4, 126)
+        Me.ver11_2.Name = "ver11_2"
+        Me.ver11_2.Size = New System.Drawing.Size(174, 19)
+        Me.ver11_2.TabIndex = 13
+        Me.ver11_2.TabStop = True
+        Me.ver11_2.Text = "Windows 11 Dev channel (2)"
+        Me.ver11_2.UseVisualStyleBackColor = True
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(384, 274)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(104, 15)
+        Me.LinkLabel2.TabIndex = 8
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Odznacz wszystkie"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(500, 248)
+        Me.ClientSize = New System.Drawing.Size(500, 298)
+        Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -331,4 +356,6 @@ Partial Class Form2
     Friend WithEvents ver11 As RadioButton
     Friend WithEvents verServer2022 As RadioButton
     Friend WithEvents verAzureStackHCIPreview As RadioButton
+    Friend WithEvents ver11_2 As RadioButton
+    Friend WithEvents LinkLabel2 As LinkLabel
 End Class
